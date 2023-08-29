@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925830146925",
+    "project_id": "instacam-7e42b",
+    "storage_bucket": "instacam-7e42b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925830146925:android:b956de7cb18f613ede4864",
+        "android_client_info": {
+          "package_name": "com.example.instacam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925830146925-sj7umaqub6gq2c89d8sqe9969qgj4r1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhd-9AWb0YXcyf9nY4XiipIpWrrBZcsDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925830146925-sj7umaqub6gq2c89d8sqe9969qgj4r1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

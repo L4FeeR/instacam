@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:instacam/screens/login.dart';
+import 'package:instacam/services/firebase_auth_methods.dart';
 import 'package:instacam/utils/colors.dart';
 import 'package:instacam/widgets/textfield.dart';
 import 'package:instacam/wip/workinprogress.dart';
@@ -24,6 +26,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
     _usernameController.dispose();
     // TODO: implement dispose
     super.dispose();
+  }
+
+  void SignUpUser() async {
+    FirebaseAuthMethods(FirebaseAuth.instance).SignUpWithEmail(
+        email: _emailController.text,
+        password: _passController.text,
+        context: context);
   }
 
   Widget build(BuildContext context) {
@@ -89,9 +98,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         height: 40,
                       ),
                       InkWell(
-                        onTap: () async {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => WorkInProgress()));
+                        onTap: () {
+                          SignUpUser;
                         },
                         child: Container(
                           child: const Text("Sign Up"),
