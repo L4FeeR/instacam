@@ -89,6 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(color: Colors.blue),
                 ),
               ),
+		SizedBox(height: 20),
               InkWell(
                 onTap: () {
                   print("pressed Sign up");
